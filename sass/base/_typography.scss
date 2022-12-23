@@ -1,0 +1,141 @@
+@use "../abstracts" as a;
+
+body {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  color: a.$color-primary-white;
+  font-size: 1.8rem;
+}
+
+.heading__primary {
+  font-weight: 700px;
+  font-size: 10rem;
+  line-height: 1;
+
+  @include a.respond(tab-land) {
+    font-size: 6.4rem;
+    text-align: center;
+  }
+
+  span {
+    color: a.$color-primary-pink;
+  }
+
+  &--contact {
+    font-size: 6.4rem;
+  }
+}
+
+.hero {
+  &__right {
+    &-text {
+      font-size: 1.5rem;
+      line-height: 28px;
+      font-weight: 600;
+
+      @include a.respond(tab-land) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.about__list-text {
+  &-heading {
+    @include a.respond(tab-land) {
+      font-size: 1.8rem;
+    }
+
+    &-p {
+      @include a.respond(tab-land) {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.heading__secondary {
+  font-size: 4.8rem;
+  font-weight: 700;
+
+  @include a.respond(tab-land) {
+    font-size: 3.2rem;
+    line-height: 32px;
+  }
+
+  span {
+    color: a.$color-secondary-light-blue;
+  }
+
+  &--red {
+    color: a.$color-secondary-dark-blue;
+  }
+
+  &--contact {
+    color: a.$color-primary-pink;
+    font-size: 3.2rem;
+  }
+}
+
+.quote {
+  &__text {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: 600;
+    width: 350px;
+
+    @include a.respond(tab-land) {
+      width: auto;
+    }
+  }
+
+  &__author {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: a.$color-secondary-light-blue;
+
+    text-align: center;
+
+    &-title {
+      font-size: 1.3rem;
+      font-style: italic;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  &__link {
+    color: a.$color-primary-white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:hover {
+      color: a.$color-primary-pink;
+    }
+  }
+  &__text {
+    color: #979797;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+.about__hero {
+  &_heading {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+}
+
+.team__heading {
+  text-align: center;
+  animation: moveInBottom 0.5s ease-in;
+}

@@ -1,0 +1,19 @@
+@use "../abstracts/" as a;
+
+.about__list {
+  &-item {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 32px;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-heading {
+      color: a.$color-primary-pink;
+    }
+  }
+}

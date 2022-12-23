@@ -1,0 +1,78 @@
+@use "../abstracts" as a;
+
+.section__contact {
+  background-color: a.$color-primary-green;
+  padding: 10rem 16.5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/assets/bg-pattern-about-2-contact-1.svg");
+    width: 200px;
+    height: 200px;
+
+    top: 125px;
+    left: -100px;
+    position: absolute;
+  }
+  &::after {
+    content: "";
+    background-image: url("/assets/bg-pattern-contact-2.svg");
+    width: 100px;
+    height: 225px;
+
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.contact {
+  width: 110rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  @include a.respond(tab-land) {
+    display: block;
+    width: auto;
+  }
+  &--left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 16px;
+    animation: moveInLeft 0.5s ease-in;
+
+    @include a.respond(tab-land) {
+      width: auto;
+      text-align: center;
+    }
+  }
+  &--right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    animation: moveInRight 0.5s ease-in;
+
+    @include a.respond(tab-land) {
+      width: auto;
+    }
+  }
+
+  &__list {
+    margin-top: 32px;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}

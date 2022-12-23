@@ -1,0 +1,43 @@
+@use "../abstracts" as a;
+
+.about {
+  // height: 70rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/assets/bg-pattern-home-3.svg");
+    width: 100px;
+    height: 244px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include a.respond(tab-land) {
+      top: 0;
+    }
+  }
+
+  &__heading {
+    width: 445px;
+    position: relative;
+    &::before {
+      content: "";
+      height: 4px;
+      width: 50px;
+      background-color: a.$color-primary-pink;
+
+      position: absolute;
+      top: -54px;
+      left: 0;
+    }
+  }
+
+  &__list {
+    width: 540px;
+
+    @include a.respond(tab-land) {
+      width: 100%;
+    }
+  }
+}

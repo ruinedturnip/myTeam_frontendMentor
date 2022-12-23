@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Frontend Mentor | myteam website challenge - Contact</title>
+  </head>
+  <body>
+    <header class="contact__header">
+      <nav class="contact__header_nav">
+        <div>
+          <a href="#" class="header__nav-logo"
+            ><img src="/assets/logo.svg" alt="myteam logo"
+          /></a>
+          <a href="index.html" class="header__nav-link header__nav-link--1"
+            >home</a
+          >
+          <a href="about.html" class="header__nav-link">about</a>
+        </div>
+
+        <a class="header__nav-btn btn btn--white" href="contact.html"
+          >contact us</a
+        >
+      </nav>
+    </header>
+    <section class="section__contact">
+      <div class="contact">
+        <div class="contact--left">
+          <h1 class="contact__heading heading__primary--contact">Contact</h1>
+          <div class="contact__div">
+            <h2 class="heading__secondary--contact">Ask us about</h2>
+            <div class="contact__list">
+              <div class="contact__list-item">
+                <img
+                  src="/assets/icon-person.svg"
+                  alt="person"
+                  class="contact__list-img"
+                  width="72px"
+                  height="72px"
+                />
+                <p class="contact__list-text-p">The quality of our talent</p>
+              </div>
+
+              <div class="contact__list-item">
+                <img
+                  src="/assets/icon-cog.svg"
+                  alt="cog"
+                  class="contact__list-img"
+                  width="72px"
+                  height="72px"
+                />
+                <p class="contact__list-text-p">
+                  Usage & implementation of our software
+                </p>
+              </div>
+
+              <div class="contact__list-item">
+                <img
+                  src="/assets/icon-person.svg"
+                  alt="person"
+                  class="contact__list-img"
+                  width="72px"
+                  height="72px"
+                />
+                <p class="contact__list-text-p">How we help drive innovation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact--right">
+          <form class="contact__form form">
+            <p>
+              <input
+                placeholder="Name"
+                type="text"
+                name="name"
+                id="name"
+                class="form__input"
+              />
+            </p>
+            <p>
+              <input
+                placeholder="Email"
+                type="email"
+                name="email address"
+                id="email"
+                class="form__input"
+              />
+            </p>
+            <p>
+              <input
+                placeholder="Company Name"
+                type="text"
+                name="Company Name"
+                id="Company Name"
+                class="form__input"
+              />
+            </p>
+            <p>
+              <input
+                placeholder="Title"
+                type="text"
+                name="Title"
+                id="title"
+                class="form__input"
+              />
+            </p>
+
+            <textarea
+              placeholder="Insert your message here"
+              id="textarea"
+              name="textarea"
+              rows="10"
+              cols="50"
+              class="form__input form__input--textarea"
+            ></textarea>
+            <submit type="submit" value="submit" class="form__btn btn"
+              >submit</submit
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section__footer footer">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="/assets/logo.svg" alt="myteam logo" class="footer__img" />
+          <div class="footer__links">
+            <a href="#" class="footer__link">home</a>
+            <a href="about.html" class="footer__link">about</a>
+          </div>
+        </div>
+        <div class="footer__box">
+          <p class="footer__text">987 Hillcrest Lane</p>
+          <p class="footer__text">Irvine, CA</p>
+          <p class="footer__text">California 92714</p>
+          <p class="footer__text">Call Us : 949-833-7432</p>
+        </div>
+      </div>
+      <div class="footer__social">
+        <div class="footer__social-box">
+          <a href="#" class="footer__social-link"
+            ><img
+              src="/assets/icon-facebook.svg"
+              alt="facebook"
+              class="footer__social_img"
+              height="24px"
+              width="24px"
+          /></a>
+          <a href="#" class="footer__social-link"
+            ><img
+              src="/assets/icon-pinterest.svg"
+              alt="pinterest"
+              class="footer__social_img"
+              height="24px"
+              width="24px"
+          /></a>
+          <a href="#" class="footer__social-link"
+            ><img
+              src="/assets/icon-twitter.svg"
+              alt="twitter"
+              class="footer__social_img"
+              height="24px"
+              width="24px"
+          /></a>
+        </div>
+        <p class="footer__text">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+@use "../abstracts/" as a;
+
+.clients {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/assets/bg-pattern-about-4.svg");
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // transform: rotate(180deg);
+
+    @include a.respond(tab-land) {
+      top: -100px;
+      z-index: 5;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 64px;
+
+    @include a.respond(tab-land) {
+      gap: 49px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__imglogo {
+    &--1 {
+      width: 165px;
+      height: 28px;
+
+      @include a.respond(tab-land) {
+        width: 103px;
+        height: 17px;
+      }
+    }
+    &--2 {
+      width: 184px;
+      height: 23px;
+
+      @include a.respond(tab-land) {
+        width: 114px;
+        height: 14px;
+      }
+    }
+    &--3 {
+      width: 165px;
+      height: 28px;
+      @include a.respond(tab-land) {
+        width: 112px;
+        height: 17px;
+      }
+    }
+    &--4 {
+      width: 165px;
+      height: 28px;
+
+      @include a.respond(tab-land) {
+        width: 103px;
+        height: 17px;
+      }
+    }
+    &--5 {
+      width: 98px;
+      height: 45px;
+
+      @include a.respond(tab-land) {
+        width: 61px;
+        height: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "../abstracts" as a;
+
+.section__team {
+  background-color: a.$color-secondary-dark-green;
+  padding: 16.5rem 16.5rem;
+
+  @include a.respond(tab-land) {
+    padding: 16.5rem 39px;
+    z-index: 10;
+  }
+}
+
+.section__clients {
+  background-color: a.$color-secondary-dark-blue;
+  padding: 16.5rem 16.5rem;
+
+  @include a.respond(tab-land) {
+    padding: 10.5rem 39px;
+  }
+}

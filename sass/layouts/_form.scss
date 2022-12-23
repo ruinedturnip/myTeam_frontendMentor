@@ -1,0 +1,58 @@
+@use "../abstracts" as a;
+
+.form {
+  p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    position: relative;
+  }
+  &__input {
+    background-color: a.$color-primary-green;
+    border: none;
+    border-bottom: 1px solid a.$color-primary-white;
+    height: 40px;
+    padding-left: 20px;
+
+    font-family: "Livvic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: a.$color-primary-white;
+
+    &--textarea {
+      height: 80px;
+      font-family: "Livvic", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: a.$color-primary-white;
+
+      padding-top: 20px;
+    }
+
+    &::placeholder {
+      font-size: 1.5rem;
+      font-family: "Livvic", sans-serif;
+      font-weight: 600;
+    }
+
+    &:focus {
+      border-bottom: 1px solid a.$color-secondary-light-blue;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 123px;
+    height: 48px;
+    background-color: a.$color-primary-white;
+    color: a.$color-secondary-dark-green;
+    margin-top: 24px;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: a.$color-secondary-light-blue;
+    }
+  }
+}
